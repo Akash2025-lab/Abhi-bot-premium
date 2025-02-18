@@ -34,8 +34,8 @@ STREAM_API = (environ.get('STREAM_API', '6a3fd84018381fe30f7e1cb2e9a41f92abfb2dd
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hindi_movie_uplod/36'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8047797327').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002327019713').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5492204858').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002406799151').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -50,9 +50,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://anujmore:anujmore@anujmore.ykiw7.mongodb.net/?retryWrites=true&w=majority&appName=anujmore")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://anujmore9022:anujmore9022@cinema.hhtph.mongodb.net/?retryWrites=true&w=majority&appName=Cinema")
-DATABASE_NAME = environ.get('DATABASE_NAME', "anujmore")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ajibcom8:9PwiXGcz41qa2p5T@cluster0.o8tsz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://gandudotcom9955:2hAX921tK1FkGMdR@cluster0.jpun0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -69,7 +69,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CMHmoviesOfficial')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/CMHmoviesOfficial')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 𝙲𝙼𝙷_𝙼𝚘𝚟𝚒𝚎𝚜')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002498430033'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002270724670'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CMHmoviesSupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
